@@ -1,0 +1,28 @@
+Problem: 
+=> Given an integer a, return true if a is a palindrome, and false otherwise.
+
+Solution:
+----------
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Problem pratice</title>
+</head>
+<body>
+    <?php
+        function palindrome($a){
+            $b = strrev($a);
+            if($a == $b){
+                return 'true';
+            }else{
+                return 'false';
+            }
+        };
+        $d = 121;
+        $c = palindrome($d);
+        echo "The number of $d is a palindrome";
+    ?>
+</body>
+</html>
